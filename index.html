@@ -11,6 +11,9 @@
     <!-- Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -72,11 +75,11 @@
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-md-10 text-start">
+          <div class="col-md-10 text-start" data-aos="fade-down" data-aos-duration="1000">
             <p class="text-start fw-bold fs-4"><i class="bi bi-person-fill"></i> Personal Profile</p>
             <hr />
             <p class="fs-5">
-              Halo, Nama saya Rizal Bagus Pambudi, lulusan S1 Teknik Informatika di Universitas Nasional lulusan tahun 2020. Saya memiliki kemampuan dalam bahasa pemograman PHP dan javascript. Kemampuan yang saya miliki bisa diandalkan
+              Halo, Nama saya Rizal Bagus Pambudi, lulusan S1 Teknik Informatika di Universitas Nasional lulusan tahun 2020. Saya memiliki kemampuan dalam bahasa pemograman HTML, CSS, PHP dan javascript. Kemampuan yang saya miliki bisa diandalkan
               secara individu ataupun tim.
             </p>
             <p class="text-start fw-bold fs-4 mt-4"><i class="bi bi-book-fill"></i> Education</p>
@@ -94,11 +97,10 @@
             <p class="text-start fw-bold fs-4 mt-3"><i class="bi bi-tools"></i> Skills</p>
             <hr />
             <ul>
-              <li>Programming (PHP dan Javascript)</li>
+              <li>Programming (HTML, CSS, PHP dan javascript)</li>
               <li>Framework (Bootstrap dan Codeigniter)</li>
               <li>Database (MySql)</li>
-              <li>Menguasai microsoft word dan excel</li>
-              <li>Memiliki Sertifikat BNSP dalam bidang computer</li>
+              <li>Menguasai paradigma pemograman(OOP dan MVC)</li>
             </ul>
             <p class="text-start fw-bold fs-4 mt-3"><i class="bi bi-briefcase-fill"></i> Work Experience</p>
             <hr />
@@ -131,7 +133,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <a href="#gambar-1">
                 <img src="img/thumb/home1.png" class="card-img-top img-thumbnail" alt="Project 1" />
                 <span></span>
@@ -147,7 +149,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <a href="#gambar-2">
                 <img src="img/thumb/adm1.png" class="card-img-top img-thumbnail" alt="Project-2" />
                 <span></span>
@@ -164,8 +166,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <a href="#gambar-3">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+              <a href="https://rizal-01.github.io/web-anime.github.io">
                 <img src="img/thumb/thumb1.png" class="card-img-top img-thumbnail" alt="Project-3" />
               </a>
               <div class="overlay" id="gambar-3">
@@ -180,9 +182,9 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <a href="#gambar-4">
-                <img src="img/thumb/thumb2.png" class="card-img-top img-thumbnail" alt="Project-4" />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+              <a href="https://rizalbpd.000webhostapp.com/">
+                <img src="img/web_product.JPG" class="card-img-top img-thumbnail" alt="Project-4" />
               </a>
               <div class="overlay" id="gambar-4">
                 <a href="#project" class="close">x close</a>
@@ -191,13 +193,13 @@
                 <a href="#gambar-5" class="next"><i class="bi bi-arrow-right h1"></i></a>
               </div>
               <div class="card-body">
-                <p class="card-text fw-bold">Pembuatan Website download film & anime dengan menggunakan HTML & CSS untuk halaman download film</p>
+                <p class="card-text fw-bold">Pembuatan Website daftar belanjaan menggunakan Framework CI</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <a href="#gambar-5">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+              <a href="https://rizal-01.github.io/">
                 <img src="img/thumb/thumb3.png" class="card-img-top img-thumbnail" alt="Project-5" />
               </a>
               <div class="overlay" id="gambar-5">
@@ -282,6 +284,20 @@
     <!-- akhir footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+      gsap.form(".jumbotron img", { duration: 1, y: -100, opacity: 0 });
+      gsap.form(".navbar", { duration: 1.5, y: "-100%", opacity: 0 });
+    </script> -->
+
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbztoNf4uwedxtcG9R5aSIPUroiTOyAB8xgi-KCH0RkREg1myimcSfyeRRZbzTDn_mM/exec";
       const form = document.forms["contact-form"];
